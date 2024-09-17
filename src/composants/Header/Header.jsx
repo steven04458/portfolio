@@ -125,7 +125,7 @@ function Header() {
               <a target="_blank" href="#">Contact</a>
             </li>
             <li style={{ float: 'right' }}>
-              <a href="https://github.com/steven04458/" target="_blank">Go my Blog</a>
+              <a href="https://github.com/steven04458/" target="_blank">Go my GitHub</a>
             </li>
 
           </ul>
