@@ -16,6 +16,11 @@
   --var-color3: #5DA5B3;
   --var-color4: #394054;
   --var-color5: #1C1C1F;
+  --angle {
+    syntax: "<angle>";
+    initial-value: 45deg;
+    inherits: false;
+}
 }
 #root {
   width: 100%;
