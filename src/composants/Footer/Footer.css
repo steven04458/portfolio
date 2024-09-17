@@ -1,0 +1,16 @@
+.footer {
+    background-color: #394054;
+    height: 150px;
+    width: 100%;
+}
+footer svg {
+    top: 0;
+    z-index: 9997;
+    width: 100%;
+}
+.footer span {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    align-items: center;
+  }

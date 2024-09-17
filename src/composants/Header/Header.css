@@ -118,6 +118,7 @@ text-decoration:none;
    background: none repeat scroll 0 0 #888;
     left: 0;
     position: absolute;
+	z-index: 10;
     width: 100%;
 	padding:15px;
 	display:none;

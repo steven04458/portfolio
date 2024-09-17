@@ -33,7 +33,7 @@ function Header() {
           <nav className="xs-menu displaynone">
             <ul>
               <li className="active">
-                <a href="">Home</a>
+                <a href="#">Home</a>
               </li>
               <li>
                 <a href="#">About</a>
