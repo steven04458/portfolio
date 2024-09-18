@@ -1,0 +1,13 @@
+/* @media (max-width: 600px) {
+  .head {
+    height: auto;
+  }
+} */
+
+.head {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: var(--var-color4);
+    min-height: 150px;
+  }

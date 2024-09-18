@@ -1,5 +1,6 @@
 import $ from 'jquery'
 import React, { useState } from 'react'
+import { Link } from "react-router-dom";
 import './Header.css'
 
 function Header() {
@@ -36,7 +37,7 @@ function Header() {
           <nav className={`xs-menu ${menuVisible ? '' : 'displaynone'}`}>
             <ul>
               <li className="active">
-                <a href="#">Home</a>
+                <a href="/portfolio/">Home</a>
               </li>
               <li>
                 <a href="#">About</a>
@@ -45,7 +46,9 @@ function Header() {
                 <a href="#">Services</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <Link to={'/portfolio/Blog'} >
+                  Blog
+                </Link>              
               </li>
               <li>
                 <a href="#">Contact</a>
@@ -115,8 +118,9 @@ function Header() {
               <a href="#">Services</a>
             </li>
             <li>
-              <a href="#">Blog</a>
-
+              <Link to={'/portfolio/Blog'} >
+                Blog
+              </Link>
             </li>
             <li>
               <a target="_blank" href="#">Contact</a>
