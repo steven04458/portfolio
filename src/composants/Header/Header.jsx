@@ -1,14 +1,15 @@
 import $ from 'jquery'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 
 function Header() {
-  $(document).ready(function() {
-    //responsive menu toggle
-    $("#menutoggle").click(function() {
-      $('.xs-menu').toggleClass('displaynone');
+  //responsive menu toggle
+  const [menuVisible, setMenuVisible] = useState(false);
 
-      });
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
+  $(document).ready(function() {
     //add active className on menu
     // $('ul li').click(function(e) {
     //   e.preventDefault();
@@ -29,8 +30,10 @@ function Header() {
     <>
       <div className="container">
         <div className="xs-menu-cont">
-          <a id="menutoggle"><i className="fa fa-align-justify"></i> </a>
-          <nav className="xs-menu displaynone">
+          <a id="menutoggle" onClick={toggleMenu}>
+            <i className="fa fa-align-justify"></i> 
+          </a>
+          <nav className={`xs-menu ${menuVisible ? '' : 'displaynone'}`}>
             <ul>
               <li className="active">
                 <a href="#">Home</a>
@@ -99,14 +102,8 @@ function Header() {
                 <div className="mm-3column">
                   <span className="categories-list">
                     <ul>
-                      <span>Car Electronics</span>
-                      <li>GPS & Navigation</li>
-                      <li>In-Dash Stereos</li>
-                      <li>Speakers</li>
-                      <li>Subwoofers</li>
-                      <li>Amplifiers</li>
-                      <li>MP3 Players</li>
-                      <li>iPods</li>
+                      <span>à propos</span>
+                      <li>Mon CV</li>
                       <li><a className="mm-view-more" href="#">View more →</a></li>
                     </ul>
                   </span>

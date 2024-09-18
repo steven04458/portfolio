@@ -41,7 +41,7 @@
   min-height: 500px;
 }
 header svg {
-  bottom: 0;
+  bottom: -2px;
   z-index: 9997;
   width: 100%;
   position: absolute;
@@ -122,4 +122,9 @@ a:hover {
 #button.show {
   opacity: 0.9;
   visibility: visible;
+}
+@media (max-width: 600px) {
+	.presentation {
+    flex-wrap: wrap;  
+  }
 }
