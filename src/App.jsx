@@ -6,28 +6,11 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css'
 import Header from './composants/Header/Header.jsx'
 import Footer from './composants/Footer/Footer.jsx'
+import BoutonsToTheTop from './composants/BoutonsToTheTop/BoutonsToTheTop.jsx'
 import PhotoSteven from './assets/photo_steven_magaud.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
-
-  $(document).ready(function(){
-    // BOUTONS TO THE TOP 
-    var btn = $('#button, #button2');
-      $(window).scroll(function() {
-        if ($(window).scrollTop() > 150) {
-          btn.addClass('show');
-        }
-        else {
-          btn.removeClass('show');
-        }
-      });
-      
-      btn.on('touchstart touchmove touchend mousedown', function(e) {
-        e.stopPropagation(); e.preventDefault();
-        $('html, body').animate({scrollTop:0}, '150');
-      });
-    });
 
   return (
     <>
@@ -42,7 +25,7 @@ function App() {
         </section>        
       </header>
 
-      <a id="button"></a>
+      <BoutonsToTheTop />
 
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
