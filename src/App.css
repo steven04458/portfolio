@@ -82,8 +82,20 @@ a:hover {
   color:inherit;
   cursor:pointer;
 }
+.presentation-text {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 6px;
+  justify-content: center;
+  width: 50%;
+  gap: 3vw;
+}
 @media (max-width: 600px) {
 	.presentation {
     flex-wrap: wrap;  
+  }
+  .presentation-text {
+    width: 100%;
   }
 }

@@ -129,6 +129,9 @@ nav.menu {
 	 transition-duration: 0.9s;
 	
 }
+.mega-menu > ul li a:hover {
+	color: #444;
+}
 #menutoggle i {
 	color: #fff;
 	font-size: 33px;
@@ -195,6 +198,7 @@ margin-right:25px;
     line-height: normal;
     padding: 5px 8px !important;
 	margin-top:10px;
+	opacity: 0;
 }
 .display-on{
 	display:block;

@@ -68,20 +68,10 @@ function Header() {
 
               <div className="mega-menu fadeIn animated">
                 <div className="mm-6column">
-                  {/* <span className="left-images">
-                    <img src="https://4.bp.blogspot.com/-faF-AemPFUM/U4ryP7pQRsI/AAAAAAAAEvA/fZ-hskCSln4/s1600/Magento%2Bthemes.jpg">
-                    <p>Most Popular Styles </p>
-                  </span> */}
                   <span className="categories-list">
                     <ul>
-                      <span>Computer</span>
-                      <li>Desktops</li>
-                      <li>Laptops</li>
-                      <li>Tablets</li>
-                      <li>Monitors</li>
-                      <li>Networking Printers</li>
-                      <li>Scanners</li>
-                      <li>Jumpers & Cardigans</li>
+                      <span>Accés rapides</span>
+                      <li><a href="#skills">Mes compétences</a></li>
                       <li><a className="mm-view-more" href="#">View more →</a></li>
                     </ul>
                   </span>
@@ -90,14 +80,8 @@ function Header() {
                 <div className="mm-3column">
                   <span className="categories-list">
                     <ul>
-                      <span>TV & Video</span>
-                      <li>LED TVs</li>
-                      <li>Plasma TVs</li>
-                      <li>3D TVs</li>
-                      <li>DVD & Blu-ray Players</li>
-                      <li>Home Theater Systems</li>
-                      <li>Cell Phones</li>
-                      <li>Apple iPhone</li>
+                      <span>Contact</span>
+                      <li><a href="mailto:steven.magaud@ynov.com">Mail</a></li>
                       <li><a className="mm-view-more" href="#">View more →</a></li>
                     </ul>
                   </span>
@@ -106,7 +90,7 @@ function Header() {
                   <span className="categories-list">
                     <ul>
                       <span>à propos</span>
-                      <li>Mon CV</li>
+                      <li><a href="/portfolio/download/CV_steven.pdf" download="CV_steven.pdf">Mon CV</a></li>
                       <li><a className="mm-view-more" href="#">View more →</a></li>
                     </ul>
                   </span>
@@ -115,15 +99,9 @@ function Header() {
 
             </li>
             <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
               <Link to={'/portfolio/Blog'} >
                 Blog
               </Link>
-            </li>
-            <li>
-              <a target="_blank" href="#">Contact</a>
             </li>
             <li style={{ float: 'right' }}>
               <a href="https://github.com/steven04458/" target="_blank">Go my GitHub</a>
