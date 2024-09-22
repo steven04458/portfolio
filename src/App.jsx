@@ -8,6 +8,7 @@ import BoutonsToTheTop from './composants/BoutonsToTheTop/BoutonsToTheTop.jsx'
 import PhotoSteven from './assets/photo_steven_magaud.jpg'
 import Slide from './composants/Slides/Slides.jsx';
 import SkillsSelector from './composants/SkillsSelector/SkillsSelector.jsx';
+import TimeLine from './composants/TimeLine/TimeLine.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,6 +30,7 @@ function App() {
       </header>
 
       <BoutonsToTheTop />
+      <TimeLine />
       <SkillsSelector />
       <Footer />
     </>

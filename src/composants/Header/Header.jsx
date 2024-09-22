@@ -40,20 +40,16 @@ function Header() {
                 <a href="/portfolio/">Home</a>
               </li>
               <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
                 <Link to={'/portfolio/Blog'} >
                   Blog
                 </Link>              
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="https://github.com/steven04458/" target="_blank">Go my GitHub</a>
               </li>
-
+              <li>
+                <a href="mailto:steven.magaud@ynov.com">Mail</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -71,8 +67,9 @@ function Header() {
                   <span className="categories-list">
                     <ul>
                       <span>Accés rapides</span>
+                      <li><a href="#contentTimeline">Mon Parcours</a></li>
                       <li><a href="#skills">Mes compétences</a></li>
-                      <li><a className="mm-view-more" href="#">View more →</a></li>
+                      {/* <li><a className="mm-view-more" href="#">View more →</a></li> */}
                     </ul>
                   </span>
 
@@ -82,7 +79,7 @@ function Header() {
                     <ul>
                       <span>Contact</span>
                       <li><a href="mailto:steven.magaud@ynov.com">Mail</a></li>
-                      <li><a className="mm-view-more" href="#">View more →</a></li>
+                      {/* <li><a className="mm-view-more" href="#">View more →</a></li> */}
                     </ul>
                   </span>
                 </div>
@@ -91,7 +88,7 @@ function Header() {
                     <ul>
                       <span>à propos</span>
                       <li><a href="/portfolio/download/CV_steven.pdf" download="CV_steven.pdf">Mon CV</a></li>
-                      <li><a className="mm-view-more" href="#">View more →</a></li>
+                      {/* <li><a className="mm-view-more" href="#">View more →</a></li> */}
                     </ul>
                   </span>
                 </div>

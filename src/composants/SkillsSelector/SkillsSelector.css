@@ -8,7 +8,7 @@
         font-size: 5vw;
         color: var(--var-color4);
         font-family: Lilita One, cursive;
-        margin-bottom: 20px;
+        margin: 20px;
     }
   }
 .skills_items {
@@ -50,8 +50,8 @@
     height: 80px;
     border-radius: 5px;
     cursor: pointer;
-    
-
+    font-family: Lilita one, cursive;
+    font-size: 2.2vw;
 }
 .contentButton {
     width: 90%;
